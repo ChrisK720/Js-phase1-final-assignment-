@@ -16,10 +16,10 @@ function payeeGen(salary, nhif,tier,nssf){
     // Tax can be split into groups based on the salary:
     // 1) salaries below 24000 (refference line 41 to line 62)
     // 2) salaries =  24000 (refference line 62 to 85 )
-    // 3) salaries greater than 24000 and less than 32333 (refference line 85 t )
-    // 4) salaries greater than 32333 and less than 500000 (refference lnie )
-    // 5) salaries grester than 500000 and less than 800000
-    // 60 salaries greater than 800000
+    // 3) salaries greater than 24000 and less than 32333 (refference line 85 to 108 )
+    // 4) salaries greater than 32333 and less than 500000 (refference line 108 to 130)
+    // 5) salaries grester than 500000 and less than 800000 (refference line 130 to 153)
+    // 6) salaries greater than 800000 (refference line 153 to line 176 )
     // throughout my code the statement that checks the salary range and then the statement that checks the tier
     // the statements for the tier are nested within the salary checker statements
     // I have checked for to see weather the contribution is valid for the given tier by doing contribution - maxpossiblecontribution
