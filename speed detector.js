@@ -28,15 +28,17 @@ function speedDetective(speed){
        }
        
 
-    }else if((result2 % 5) !== 0)
-     result2 = result1 - 70
+    }else if((result2 % 5) !== 0){
      result3 = result2 / 5
      result4 = Math.round(result3)
-     if(result4 > 0 && result4 < 12){
+     if(result4 >= 0 && result4 <= 12){
          console.log(`you got ${result4} demerit points`)
      }else if(result4 > 12){
          console.log('lisence suspended')
      }
+  }
+
+
 }
 
 // Below are tests for my code:
@@ -46,5 +48,4 @@ speedDetective(81)
 speedDetective(101)
 speedDetective(98)
 speedDetective(150)
-
 
